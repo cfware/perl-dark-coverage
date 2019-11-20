@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name         perl-dark-coverage
+@namespace    github.com/cfware
+@version      1.0.0
+@description  Dark theme for Perl Devel::Cover Reports
+@author       CFWare, LLC
+@license      MIT
+@homepageURL  https://github.com/cfware/perl-dark-coverage
+@supportURL   https://github.com/cfware/perl-dark-coverage/issues
+@updateURL    https://raw.githubusercontent.com/cfware/perl-dark-coverage/master/cover_db.user.css
+==/UserStyle== */
+
+@-moz-document regexp("file://.*/cover_db/.*") {
+    body {
+        background: black;
+        color: #666;
+    }
+
+    h1,
+    h1 + table {
+        background-color: #111;
+        color: #666;
+    }
+
+    td {
+        border: 1px solid #666;
+    }
+
+    table th, td.h, td:first-child, td[align=left] > a {
+        background-color: #222;
+        color: #777;
+    }
+
+    .c0 {
+        background-color: #a44;
+        border: 1px solid #811;
+    }
+
+    .c1 {
+        background-color: #c70;
+        border: 1px solid #a50;
+    }
+
+    .c2 {
+        background-color: #aa0;
+        border: 1px solid #880;
+    }
+
+    .c3 {
+        background-color: #0a0;
+        border: 1px solid #080;
+    }
+
+    .c0, .c1, .c2, .c3,
+    .c0 > a,
+    .c1 > a,
+    .c2 > a,
+    .c3 > a {
+        color: black!important;
+    }
+
+    a, a:visited {
+        color: purple;
+    }
+}
+
+@-moz-document regexp("file://.*/cover_db/coverage.html") {
+    h1 + table + div + table tr:last-child td:first-child {
+        color: #777;
+    }
+}
