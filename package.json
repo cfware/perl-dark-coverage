@@ -1,0 +1,16 @@
+{
+	"name": "@cfware/perl-dark-coverage",
+	"version": "1.0.0",
+	"private": "Do not publish to npm",
+	"description": "Dark theme for Perl Devel::Cover Reports",
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/perl-dark-coverage.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/perl-dark-coverage/issues"
+	},
+	"homepage": "https://github.com/cfware/perl-dark-coverage#readme"
+}
